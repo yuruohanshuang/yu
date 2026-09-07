@@ -1,0 +1,20 @@
+2026-09-03 17:11:18 | DEBUG    | logger.py:55 | 调试信息
+2026-09-03 17:11:18 | INFO     | logger.py:56 | 程序启动
+2026-09-03 17:11:18 | WARNING  | logger.py:57 | 注意潜在问题
+2026-09-03 17:11:18 | ERROR    | logger.py:58 | 发生错误
+2026-09-03 17:11:45 | DEBUG    | logger.py:55 | 调试信息
+2026-09-03 17:11:45 | INFO     | logger.py:56 | 程序启动
+2026-09-03 17:11:45 | WARNING  | logger.py:57 | 注意潜在问题
+2026-09-03 17:11:45 | ERROR    | logger.py:58 | 发生错误
+2026-09-03 17:11:46 | DEBUG    | logger.py:55 | 调试信息
+2026-09-03 17:11:46 | INFO     | logger.py:56 | 程序启动
+2026-09-03 17:11:46 | WARNING  | logger.py:57 | 注意潜在问题
+2026-09-03 17:11:46 | ERROR    | logger.py:58 | 发生错误
+2026-09-07 15:51:41 | INFO     | calc_tools.py:55 | stats={'count': 5, 'sum': 150, 'avg': 30.0, 'max': 50, 'min': 10}
+2026-09-07 15:51:41 | INFO     | calc_tools.py:56 | avg=2.0
+2026-09-07 15:51:41 | INFO     | calc_tools.py:57 | weighted=90.5
+2026-09-07 15:51:41 | ERROR    | calc_tools.py:21 | calc_sum 入参非数字: unsupported operand type(s) for +: 'int' and 'str'
+2026-09-07 16:22:29 | INFO     | calc_tools.py:53 | stats={'count': 5, 'sum': 150, 'avg': 30.0, 'max': 50, 'min': 10}
+2026-09-07 16:22:29 | INFO     | calc_tools.py:54 | avg=2.0
+2026-09-07 16:22:29 | INFO     | calc_tools.py:55 | weighted=90.5
+2026-09-07 16:22:29 | ERROR    | calc_tools.py:19 | calc_sum 入参非数字: unsupported operand type(s) for +: 'int' and 'str'
