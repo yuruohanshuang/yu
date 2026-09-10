@@ -1,19 +1,15 @@
-def gcd(a: int, b: int) -> int:
-    """一句话总结 第一行做什么  总结：计算两个数的最小公倍数
+# src/utils/__init__.py
+"""项目公共工具包."""
+from .logger import get_logger
+from .decorators import timer, retry, log_calls
+from .validators import is_valid_phone, is_valid_email
+from .calc_tools import calc_sum, calc_average, calc_stats
 
-    Args:参数列表（带类型与说明）
-        a(int)：数值1
-        b(int)：数值2
+__all__ = [
+    "get_logger",
+    "timer", "retry", "log_calls",
+    "is_valid_phone", "is_valid_email",
+    "calc_sum", "calc_average", "calc_stats",
+]
 
-    Return：返回值结
-        求出的最小公约数 整数b
-    Raise：可能抛出的异常
-        无
-    Examle:至少一个调用示例
-        >>> gcd(10,8)
-        2
-    """
-    # x % y = z ----->y是x，z的最大公约数
-    while a % b != 0:
-        a, b = b, a % b
-    return b
+__version__ = "0.6.0"

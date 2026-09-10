@@ -18,3 +18,7 @@
 2026-09-07 16:22:29 | INFO     | calc_tools.py:54 | avg=2.0
 2026-09-07 16:22:29 | INFO     | calc_tools.py:55 | weighted=90.5
 2026-09-07 16:22:29 | ERROR    | calc_tools.py:19 | calc_sum 入参非数字: unsupported operand type(s) for +: 'int' and 'str'
+2026-09-10 10:09:08 | INFO     | decorators.py:62 | 调用 add(args=(3, 5), kwargs={})
+2026-09-10 10:09:08 | INFO     | decorators.py:64 | add 返回 8
+2026-09-10 10:09:26 | INFO     | decorators.py:62 | 调用 add(args=(3, 5), kwargs={})
+2026-09-10 10:09:26 | INFO     | decorators.py:64 | add 返回 8
