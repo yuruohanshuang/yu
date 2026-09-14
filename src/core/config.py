@@ -17,6 +17,10 @@ class AppConfig:
     VALID_ENVS = ["dev","test","prod"]
     _instance = None  # 私有类属性，用于存储类的唯一实例
     _initialized = False  # 私有类属性，用于标识类是否已初始化
+    API_BASE_URL = "https://api.example.com"
+    API_TIMEOUT = 10
+    API_KEY = "your_api_key"
+    API_RETRY_TIMES = 3
 
     def __new__(cls):
         if cls._instance is None:

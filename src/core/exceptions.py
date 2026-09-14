@@ -50,3 +50,25 @@ try:
 except AppError as e:
     print(e.error_code)
     print(e)
+
+class ResourceNotFoundError(AppError):
+    """资源不存在错误."""
+
+    def __init__(self, resource):
+        message = f"资源不存在: {resource}"
+        super().__init__(message, "RESOURCE_NOT_FOUND_ERROR")
+
+
+class AuthError(AppError):
+    """认证或授权错误."""
+
+    def __init__(self, message):
+        message = f"认证或授权错误: {message}"
+        super().__init__(message, "AUTH_ERROR")
+
+
+class ServerError(AppError):
+    """服务器错误."""
+    def __init__(self, message):
+        message = f"服务器内部错误:{message}"
+        super().__init__(message, "SERVER_ERROR")
