@@ -1,3 +1,19 @@
+# URL基础调用
+
+import requests
+
+url = "https://jsonplaceholder.typicode.com/users/1"
+headers = {"Accept": "application/json"}
+
+response = requests.get(url, headers=headers, timeout=10)
+user = response.json()
+
+print(response.status_code)
+print(user["name"])
+print(user["email"])
+
+
+
 # API 工具与 requests 对应关系
 
 | 工具中的概念 | requests 中的写法 | 说明 |
