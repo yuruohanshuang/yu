@@ -5,10 +5,12 @@ Date:2026/9/14
 
 from src.api import APIClient
 from src.core import APIError
+import os
+from dotenv import load_dotenv
 
-with APIClient("https://jsonplaceholder.typicode.com") as client:
-    users = client.get("/users", params={"_limit": 3})
-    print(users[0]["name"])
+load_dotenv()
 
-    post = client.post("/posts", json_data={"title": "demo", "body": "hello", "userId": 1})
-    print(post.get("id"))
+client = APIClient("https://httpbin.org")
+client.set_token("<YOUR_ACCESS_TOKEN>")
+result = client.get("/headers")
+print(result["headers"].get("Authorization"))

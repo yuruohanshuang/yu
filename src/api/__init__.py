@@ -1,5 +1,5 @@
 """API 调用模块."""
 
-from .client import APIClient
+from .APIClient import APIClient
 
 __all__ = ["APIClient"]
